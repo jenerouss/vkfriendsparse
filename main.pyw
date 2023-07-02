@@ -1,17 +1,21 @@
-import tok
+# -*- coding: utf8 -*-
+from time import sleep
+
 import datetime
 import os
 import requests
+import tok
 import vk_api
 import vk_api.longpoll
-from bs4 import BeautifulSoup
 from aiogram import Bot
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
-from time import sleep
-from winotify import Notification, audio
+from bs4 import BeautifulSoup
 from os import getcwd
 from random import randint
+from winotify import Notification, audio
+
+
 tg_token = tok.token['TG']
 bot = Bot(token=tg_token)
 dp = Dispatcher(bot)
